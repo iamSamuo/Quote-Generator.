@@ -29,7 +29,7 @@ class Quotes extends React.Component {
         {
           message:
             "I am not a product of my circumstances. I am a product of my decisions.",
-          author: "Albert EinsteinStephen Covey",
+          author: "Albert Einstein",
           color: "orange",
         }
         ,
