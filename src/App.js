@@ -1,6 +1,6 @@
 import React from "react";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
-import TwitterIcon from '@mui/icons-material/Twitter';
+import TwitterIcon from "@mui/icons-material/Twitter";
 import "./index.css";
 
 class Quotes extends React.Component {
@@ -25,21 +25,18 @@ class Quotes extends React.Component {
           author: "Albert Einstein",
           color: "purple",
         },
-        
+
         {
           message:
             "I am not a product of my circumstances. I am a product of my decisions.",
-          author: "Albert EinsteinStephen Covey",
+          author: "Stephen Covey",
           color: "orange",
-        }
-        ,
-        
+        },
         {
-          message:
-            "Do what you can, where you are, with what you have.",
+          message: "Do what you can, where you are, with what you have.",
           author: "Teddy Roosevelt",
           color: "grey",
-        }
+        },
       ],
       currentQuoteIndex: 0,
     };
@@ -78,7 +75,10 @@ class Quotes extends React.Component {
       <div>
         <h1 className="heading">Quote Generator.</h1>
         <div id="quote-box" style={style}>
-          <h3 id="text"><FormatQuoteIcon />{message}</h3>
+          <h3 id="text">
+            <FormatQuoteIcon style={{ fontSize: "50px" }} />
+            {message}
+          </h3>
           <p id="author">- {author}</p>
           <div id="buttons">
             <a
@@ -88,7 +88,9 @@ class Quotes extends React.Component {
               style={style.button}
               id="twitter"
               target="_top"
-            > <TwitterIcon/>
+            >
+              {" "}
+              <TwitterIcon />
             </a>
             <button
               id="new quote"
