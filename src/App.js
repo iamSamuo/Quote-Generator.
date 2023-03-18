@@ -29,11 +29,10 @@ class Quotes extends React.Component {
         {
           message:
             "I am not a product of my circumstances. I am a product of my decisions.",
-<<<<<<< HEAD
+
           author: "Stephen Covey",
-=======
           author: "Albert Einstein",
->>>>>>> 24b60f47e6e1d0a279b511a4e49b85eb95a2d355
+
           color: "orange",
         },
         {
@@ -47,7 +46,7 @@ class Quotes extends React.Component {
     this.nextQuote = this.nextQuote.bind(this);
   }
 
-  nextQuote = () => {
+  nextQuote() {
     const { quotes, currentQuoteIndex } = this.state;
     let nextIndex = currentQuoteIndex + 1;
 
@@ -62,7 +61,7 @@ class Quotes extends React.Component {
       });
       document.body.classList.remove("fade-in");
     }, 500);
-  };
+  }
 
   render() {
     const { quotes, currentQuoteIndex } = this.state;
@@ -93,7 +92,6 @@ class Quotes extends React.Component {
               id="twitter"
               target="_top"
             >
-              {" "}
               <TwitterIcon />
             </a>
             <button
